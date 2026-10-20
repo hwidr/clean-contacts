@@ -1,0 +1,78 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#f4f6fb"/>
+
+  <!-- Titre -->
+  <text x="640" y="70" text-anchor="middle" font-size="40" font-weight="700" fill="#1f2a44">Fichier de contacts : nettoyage automatique</text>
+  <text x="640" y="110" text-anchor="middle" font-size="22" fill="#5b6478">Script Python sur mesure — doublons, formats, lignes vides corrigés en 1 clic</text>
+
+  <!-- ===== AVANT ===== -->
+  <g>
+    <rect x="60" y="160" width="520" height="470" rx="14" fill="#ffffff" stroke="#e3002b" stroke-width="2"/>
+    <rect x="60" y="160" width="520" height="54" rx="14" fill="#fbe9ec"/>
+    <rect x="60" y="188" width="520" height="26" fill="#fbe9ec"/>
+    <text x="90" y="196" font-size="24" font-weight="700" fill="#e3002b">✕ AVANT — le fichier reçu</text>
+
+    <g font-family="Consolas, monospace" font-size="16" fill="#3a3f4b">
+      <text x="86" y="252">Nom , Email , Telephone</text>
+      <text x="86" y="286">  jean   DUPONT , Jean.Dupont@MAIL.com</text>
+      <text x="86" y="320">marie martin , +33 7 11 22 33 44</text>
+      <text x="86" y="354" fill="#e3002b">JEAN DUPONT , jean.dupont@mail.com</text>
+      <text x="440" y="354" font-family="Segoe UI" font-size="13" fill="#e3002b">← doublon</text>
+      <text x="86" y="388" fill="#e3002b">, ,</text>
+      <text x="160" y="388" font-family="Segoe UI" font-size="13" fill="#e3002b">← ligne vide</text>
+      <text x="86" y="422">sophie   bernard , 0033688776655</text>
+      <text x="86" y="456">luc petit , 0611223344</text>
+    </g>
+
+    <g font-family="Segoe UI" font-size="15" fill="#e3002b">
+      <text x="90" y="520">• Majuscules incohérentes</text>
+      <text x="90" y="548">• Numéros dans 4 formats différents</text>
+      <text x="90" y="576">• Doublons et lignes vides</text>
+      <text x="90" y="604">• Pas trié, illisible</text>
+    </g>
+  </g>
+
+  <!-- Flèche -->
+  <g>
+    <circle cx="640" cy="395" r="40" fill="#2F5496"/>
+    <path d="M620 395 h30 M640 380 l18 15 l-18 15" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ===== APRÈS ===== -->
+  <g>
+    <rect x="700" y="160" width="520" height="470" rx="14" fill="#ffffff" stroke="#1aa260" stroke-width="2"/>
+    <rect x="700" y="160" width="520" height="54" rx="14" fill="#e8f6ee"/>
+    <rect x="700" y="188" width="520" height="26" fill="#e8f6ee"/>
+    <text x="730" y="196" font-size="24" font-weight="700" fill="#1aa260">✓ APRÈS — Excel propre</text>
+
+    <!-- tableau -->
+    <g>
+      <rect x="726" y="240" width="468" height="36" fill="#2F5496"/>
+      <text x="740" y="264" font-size="15" font-weight="700" fill="#ffffff">Nom</text>
+      <text x="900" y="264" font-size="15" font-weight="700" fill="#ffffff">Email</text>
+      <text x="1095" y="264" font-size="15" font-weight="700" fill="#ffffff">Téléphone</text>
+
+      <g font-size="14" fill="#2b2f3a">
+        <rect x="726" y="276" width="468" height="34" fill="#ffffff"/>
+        <text x="740" y="298">Jean Dupont</text><text x="900" y="298">jean.dupont@mail.com</text><text x="1095" y="298">06 12 34 56 78</text>
+        <rect x="726" y="310" width="468" height="34" fill="#f3f6fb"/>
+        <text x="740" y="332">Luc Petit</text><text x="900" y="332">luc.petit@mail.com</text><text x="1095" y="332">06 11 22 33 44</text>
+        <rect x="726" y="344" width="468" height="34" fill="#ffffff"/>
+        <text x="740" y="366">Marie Martin</text><text x="900" y="366">marie.martin@mail.com</text><text x="1095" y="366">07 11 22 33 44</text>
+        <rect x="726" y="378" width="468" height="34" fill="#f3f6fb"/>
+        <text x="740" y="400">Sophie Bernard</text><text x="900" y="400">sophie.bernard@mail.com</text><text x="1095" y="400">06 88 77 66 55</text>
+      </g>
+      <rect x="726" y="276" width="468" height="136" fill="none" stroke="#d6deea" stroke-width="1"/>
+    </g>
+
+    <g font-family="Segoe UI" font-size="15" fill="#1aa260">
+      <text x="730" y="470">• Noms uniformisés (Majuscule Initiale)</text>
+      <text x="730" y="498">• Numéros au format 0X XX XX XX XX</text>
+      <text x="730" y="526">• Doublons et vides supprimés</text>
+      <text x="730" y="554">• Trié alphabétiquement, prêt à l'emploi</text>
+    </g>
+    <text x="730" y="604" font-size="14" fill="#5b6478">7 lignes en bazar → 4 contacts propres, en 2 secondes</text>
+  </g>
+
+  <text x="640" y="680" text-anchor="middle" font-size="16" fill="#8a93a6">Exemple réel produit par le script clean_contacts.py</text>
+</svg>
